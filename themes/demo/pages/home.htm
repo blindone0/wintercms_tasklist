@@ -1,0 +1,52 @@
+title = "Demonstration"
+url = "/"
+layout = "default"
+is_hidden = 1
+
+[tasksLook]
+==
+<?php
+function onStart()
+{
+  $this['tasks'] = $this['tasksLook']->load();
+}
+?>
+==
+{% component 'tasksLook' %}
+
+
+<div class="container">
+
+
+<div class="text-center">
+    <h1>
+        Tasks for today:
+    </h1>
+</div>
+    <hr />
+    
+
+            {% for task in tasks %}
+    <div class="text-center" style="border: 2px solid brown; margin-bottom: 3px;">
+
+            <h6>Task:</h6>
+            <p>{{task.task}}</p>
+            <hr>
+            <h6>
+                Responsible:
+            </h6>
+            <p>{{task.responsible}}</p>
+            <hr>
+            <h6>Deadline: </h6>
+            <p>{{task.deadline}}</p>
+            <hr>
+            <h6>Status: </h6>
+            <p>{{task.status}}</p>
+
+        </div>
+    {% endfor %}  
+
+
+
+
+</div>

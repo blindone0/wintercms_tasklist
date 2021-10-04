@@ -1,0 +1,16 @@
+columns:
+    id:
+        label: id
+        type: number
+    task:
+        label: task
+        type: text
+    responsible:
+        label: responsible
+        type: text
+    deadline:
+        label: deadline
+        type: text
+    status:
+        label: status
+        type: text

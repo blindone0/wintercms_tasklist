@@ -1,0 +1,11 @@
+plugin:
+    name: 'ihorr.tasks::lang.plugin.name'
+    description: 'ihorr.tasks::lang.plugin.description'
+    author: ihorr
+    icon: oc-icon-book
+    homepage: ''
+navigation:
+    main-menu-tasklist:
+        label: 'ihorr.tasks::lang.plugin.name'
+        url: ihorr/tasks/tasklist
+        icon: icon-align-right

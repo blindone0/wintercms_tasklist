@@ -1,0 +1,20 @@
+fields:
+    task:
+        label: Tasks
+        span: auto
+        placeholder: 'ihorr.tasks::lang.plugin.name'
+        type: text
+    responsible:
+        label: 'Responsible person'
+        span: auto
+        type: text
+    deadline:
+        label: Deadline
+        mode: datetime
+        span: auto
+        type: datepicker
+    status:
+        label: Status
+        span: auto
+        placeholder: ''
+        type: text

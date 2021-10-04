@@ -1,0 +1,10 @@
+name: Tasklist
+form: $/ihorr/tasks/models/tasklist/fields.yaml
+modelClass: Ihorr\Tasks\Models\Tasklist
+defaultRedirect: ihorr/tasks/tasklist
+create:
+    redirect: 'ihorr/tasks/tasklist/update/:id'
+    redirectClose: ihorr/tasks/tasklist
+update:
+    redirect: ihorr/tasks/tasklist
+    redirectClose: ihorr/tasks/tasklist
